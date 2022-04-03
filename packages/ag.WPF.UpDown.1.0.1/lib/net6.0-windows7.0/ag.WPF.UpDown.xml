@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ag.WPF.UpDown</name>
+    </assembly>
+    <members>
+        <member name="T:ag.WPF.UpDown.UpDown">
+            <summary>
+            Represents custom control with button spinners that allows incrementing and decrementing numeric values by using the spinner buttons and keyboard up/down arrows.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.ValueProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.Value"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.MaxValueProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.MaxValue"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.MinValueProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.MinValue"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.StepProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.Step"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.NegativeForegroundProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.NegativeForeground"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.DecimalPlacesProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.DecimalPlaces"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.IsReadOnlyProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.IsReadOnly"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.UseGroupSeparatorProperty">
+            <summary>
+            The identifier of the <see cref="P:ag.WPF.UpDown.UpDown.UseGroupSeparator"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.UseGroupSeparator">
+            <summary>
+            Gets or sets the value that indicates whether group separator is used for number formatting.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.IsReadOnly">
+            <summary>
+            Gets or sets the value that indicates whether UpDown is in read-only state.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.DecimalPlaces">
+            <summary>
+            Gets or sets the value that indicates the count of decimal digits shown at UpDown.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.NegativeForeground">
+            <summary>
+            Gets or sets the Brush to apply to the text contents of UpDown when control's value is negative.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.Step">
+            <summary>
+            Gets or sets the value to increment or decrement UpDown when the up or down buttons are clicked.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.MinValue">
+            <summary>
+            Gets or sets the minimum allowed value of UpDown.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.MaxValue">
+            <summary>
+            Gets or sets the maximum allowed value of UpDown.
+            </summary>
+        </member>
+        <member name="P:ag.WPF.UpDown.UpDown.Value">
+            <summary>
+            Gets or sets the value of UpDown.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.IsReadOnlyChanged">
+            <summary>
+            Occurs when the <see cref="P:ag.WPF.UpDown.UpDown.IsReadOnly"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.IsReadOnlyChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.IsReadOnlyChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.UseGroupSeparatorChanged">
+            <summary>
+            Occurs when the <see cref="P:ag.WPF.UpDown.UpDown.UseGroupSeparator"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.UseGroupSeparatorChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.UseGroupSeparatorChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.DecimalPlacesChanged">
+            <summary>
+            Occurs when the <see cref="P:ag.WPF.UpDown.UpDown.DecimalPlaces"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.DecimalPlacesChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.DecimalPlacesChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.NegativeForegroundChanged">
+            <summary>
+            Occurs when the <see cref="P:ag.WPF.UpDown.UpDown.NegativeForeground"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.NegativeForegroundChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.NegativeForegroundChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.StepChanged">
+            <summary>
+            Occurs when the <see cref="P:ag.WPF.UpDown.UpDown.Step"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.StepChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.StepChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.MinValueChanged">
+            <summary>
+            Occurs when the <see cref="P:ag.WPF.UpDown.UpDown.MinValue"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.MinValueChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.MinValueChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.MaxValueChanged">
+            <summary>
+            Occurs when the <see cref="E:ag.WPF.UpDown.UpDown.MaxValueChanged"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.MaxValueChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.MaxValueChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="E:ag.WPF.UpDown.UpDown.ValueChanged">
+            <summary>
+            Occurs when the <see cref="P:ag.WPF.UpDown.UpDown.Value"/> property has been changed in some way.
+            </summary>
+        </member>
+        <member name="F:ag.WPF.UpDown.UpDown.ValueChangedEvent">
+            <summary>
+            Identifies the <see cref="E:ag.WPF.UpDown.UpDown.ValueChanged"/> routed event.
+            </summary>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnIsReadOnlyChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.IsReadOnlyChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old value</param>
+            <param name="newValue">New value</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnUseGroupSeparatorChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.UseGroupSeparatorChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old value</param>
+            <param name="newValue">New value</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnNegativeForegroundChanged(System.Windows.Media.SolidColorBrush,System.Windows.Media.SolidColorBrush)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.NegativeForegroundChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old foreground</param>
+            <param name="newValue">New foreground</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnDecimalPlacesChanged(System.UInt32,System.UInt32)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.DecimalPlacesChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old decimal digits count</param>
+            <param name="newValue">New decimal digits count</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnStepChanged(System.Decimal,System.Decimal)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.StepChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old step</param>
+            <param name="newValue">New step</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnMinValueChanged(System.Decimal,System.Decimal)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.MinValueChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old min value</param>
+            <param name="newValue">New min value</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnMaxValueChanged(System.Decimal,System.Decimal)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.MaxValueChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old max value</param>
+            <param name="newValue">New max value</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnValueChanged(System.Decimal,System.Decimal)">
+            <summary>
+            Invoked just before the <see cref="E:ag.WPF.UpDown.UpDown.ValueChanged"/> event is raised on UpDown
+            </summary>
+            <param name="oldValue">Old value</param>
+            <param name="newValue">New value</param>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDown.OnApplyTemplate">
+            <summary>
+            Is invoked whenever application code or internal processes call ApplyTemplate.
+            </summary>
+        </member>
+        <member name="T:ag.WPF.UpDown.UpDownForegroundConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDownForegroundConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Determines UpDown foreground.
+            </summary>
+            <param name="values">Array consists of current UpDown value, regular foreground brush and negative foreground brush</param>
+            <param name="targetType">Not used.</param>
+            <param name="parameter">Not used.</param>
+            <param name="culture">Not used.</param>
+            <returns>Brush depended on current value sign.</returns>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDownForegroundConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented.
+            </summary>
+            <param name="value">Not used.</param>
+            <param name="targetTypes">Not used.</param>
+            <param name="parameter">Not used.</param>
+            <param name="culture">Not used.</param>
+            <returns>Not used.</returns>
+        </member>
+        <member name="T:ag.WPF.UpDown.UpDownTextToValueConverter">
+            <summary>
+            Converts decimal value to string.
+            </summary>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDownTextToValueConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts decimal value to string.
+            </summary>
+            <param name="values">Array consists of current UpDown value, decimal places and separator using flag.</param>
+            <param name="targetType">Not used.</param>
+            <param name="parameter">Not used.</param>
+            <param name="culture">Not used.</param>
+            <returns>Formatted string.</returns>
+        </member>
+        <member name="M:ag.WPF.UpDown.UpDownTextToValueConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts string to decimal.
+            </summary>
+            <param name="value">String.</param>
+            <param name="targetTypes">Not used.</param>
+            <param name="parameter">Not used.</param>
+            <param name="culture">Not used.</param>
+            <returns>Decimal.</returns>
+        </member>
+    </members>
+</doc>
